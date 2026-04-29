@@ -1,0 +1,296 @@
+/* Search Page Styles */
+
+.searchContainer {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.searchWrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .searchWrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .searchWrapper {
+    padding: 2rem 2rem;
+  }
+}
+
+.searchCard {
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.searchTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .searchTitle {
+    font-size: 2.25rem;
+  }
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.searchSection {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.searchSectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.searchField {
+  margin-bottom: 1rem;
+}
+
+.searchLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.searchInput,
+.searchSelect {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.searchInput:focus,
+.searchSelect:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.searchGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .searchGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .searchGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.searchButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.searchButton:hover {
+  background-color: #1d4ed8;
+}
+
+.searchButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.searchButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.clearButton {
+  background-color: #6b7280;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.clearButton:hover {
+  background-color: #4b5563;
+}
+
+.clearButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.1);
+}
+
+.errorMessage {
+  margin-top: 1.5rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+.errorTitle {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.errorText {
+  color: #b91c1c;
+  margin-top: 0.25rem;
+}
+
+.resultsSection {
+  margin-top: 2rem;
+}
+
+.resultsTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.userCard {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.userInfoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .userInfoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .userInfoGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.userName {
+  font-weight: 600;
+  color: #111827;
+}
+
+.userEmail {
+  color: #4b5563;
+}
+
+.userDetail {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.appliancesSection {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.appliancesTitle {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.appliancesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .appliancesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.applianceCard {
+  background-color: #f9fafb;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.applianceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.applianceType {
+  font-weight: 500;
+  color: #111827;
+}
+
+.applianceCost {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.applianceDetails {
+  font-size: 0.875rem;
+  color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.noResults {
+  margin-top: 2rem;
+  text-align: center;
+  color: #6b7280;
+}
